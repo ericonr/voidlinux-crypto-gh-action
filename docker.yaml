@@ -1,0 +1,10 @@
+name: 'Create Void musl image'
+inputs:
+   opt:
+      description: 'option to pass to CI'
+      default: ''
+runs:
+   using: 'docker'
+   image: 'Dockerfile'
+   args:
+      - ${{ inputs.opt }}
